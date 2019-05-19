@@ -1,0 +1,6 @@
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout - alert after few sec
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_param - after 2 sec text on screen
+https://www.w3schools.com/code/tryit.asp?filename=FVEZ1JEHSNQL   --disappear after 3 sec
+http://www.jquerybyexample.net/2012/12/make-div-disappear-or-appear-after-few-seconds-jquery.html -- disappear after 3 sec
+https://www.w3schools.com/code/tryit.asp?filename=FX6TJ2AYPYIZ - alerts
+
