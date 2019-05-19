@@ -19,13 +19,14 @@ public class FluentWaitDemo {
 		
 		driver.get("file:///D:/QSP_EclipseWS/SeleniumPractice/html/CounterText.html");
 		
-		FluentWait<WebElement> wait = new FluentWait<WebElement>(
-				driver.findElement(By.id("counter")))
+		FluentWait<WebElement> wait = new FluentWait<WebElement>
+				(driver.findElement(By.id("counter")))
 				.withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofMillis(500))
 				.ignoring(NoSuchElementException.class)
 				.ignoring(Exception.class);
 		
+		//https://github.com/AravindaHB/QSP_27_APR
 		
 		Function<WebElement, Boolean> fun = new Function<WebElement, Boolean>() {
 			@Override
