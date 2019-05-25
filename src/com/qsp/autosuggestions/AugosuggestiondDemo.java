@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.qsp.utils.ApplicationUtils;
+import com.qsp.utils.ActitimeUtils;
 import com.qsp.utils.DriverUtils;
 
 public class AugosuggestiondDemo {
@@ -16,7 +16,7 @@ public class AugosuggestiondDemo {
 	
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = DriverUtils.getMyDriver();
-		ApplicationUtils.launchApp("https://www.google.com/");
+		ActitimeUtils.launchApp("https://www.google.com/");
 		
 		driver.findElement(By.name("q")).sendKeys("Qspiders");
 //		Thread.sleep(5000);	

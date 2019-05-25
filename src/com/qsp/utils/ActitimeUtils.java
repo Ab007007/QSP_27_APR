@@ -2,7 +2,7 @@ package com.qsp.utils;
 
 import org.openqa.selenium.WebDriver;
 
-public class ApplicationUtils extends DriverUtils
+public class ActitimeUtils extends DriverUtils
 {
 
 	public static void launchApp(String url)
