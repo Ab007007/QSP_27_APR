@@ -18,6 +18,17 @@ public class DriverUtils {
 		System.setProperty("webdriver.chrome.driver", "drivers//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		return driver;
+	}
+	
+	public static void waitTime(int ms)
+	{
+		try {
+			Thread.sleep(ms);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
