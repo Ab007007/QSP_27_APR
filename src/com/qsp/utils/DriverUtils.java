@@ -3,6 +3,7 @@ package com.qsp.utils;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverUtils {
@@ -31,4 +32,17 @@ public class DriverUtils {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void selectCheckbox(WebElement checkBox) {
+		if(checkBox.isSelected())
+		{
+			System.out.println("CheckBox is already Selected..!!! Not performing any operation");
+		}
+		else
+		{
+			System.out.println("Selecting checkbox");
+			checkBox.click();
+		}
+	}
+
 }

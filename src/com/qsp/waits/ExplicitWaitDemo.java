@@ -14,9 +14,10 @@ public class ExplicitWaitDemo {
 	public static void main(String[] args) {
 		WebDriver driver = getmydriver();
 		driver.get("file:///D:/QSP_EclipseWS/SeleniumPractice/html/PageLoadApp.html");
-		
+		System.out.println("Before Explicit wait " + driver.findElement(By.id("btnContinue")).isDisplayed());
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("btnContinue"))));
+		System.out.println("After explicit Wait " + driver.findElement(By.id("btnContinue")).isDisplayed());
 		
 		driver.findElement(By.id("btnContinue")).click();
 		System.out.println("Element found successfully");
