@@ -13,6 +13,13 @@ public class DragAndDropDemo {
 		WebDriver driver = ActitimeUtils.getMyDriver();
 		ActitimeUtils.launchApp("http://jqueryui.com/droppable/");
 		driver.switchTo().frame(0);
+		/*
+		 * driver.switchTo().frame("valuestoredinName");
+		 * driver.switchTo().frame(driver.findElement(By.xpath("//frame[@name='abc']")))
+		 * ;
+		 * 
+		 * 
+		 */
 		WebElement src = driver.findElement(By.id("draggable"));
 		WebElement dest = driver.findElement(By.id("droppable"));
 		

@@ -18,11 +18,8 @@ public class ChildBrowserDemo extends ActitimeUtils
 		WebDriver driver =  getMyDriver();
 		launchApp("https://www.irctc.co.in/eticketing/userSignUp.jsf");
 		driver.findElement(By.linkText("Contact Us")).click();
-		
 		Set<String> windowIds = driver.getWindowHandles();
-		
 		Iterator<String> it  =  windowIds.iterator();
-		
 		String parentID = it.next();
 		String childID = it.next();
 		driver.switchTo().window(childID);
