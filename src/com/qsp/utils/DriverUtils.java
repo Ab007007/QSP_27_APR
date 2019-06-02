@@ -89,7 +89,6 @@ public class DriverUtils {
 	{
 		System.out.println("finding element using " + locator + " and " + locatorValue);
 		WebElement ele = null;
-		
 		switch (locator.toLowerCase()) {
 		case "id":
 				ele = driver.findElement(By.id(locatorValue));
@@ -99,15 +98,12 @@ public class DriverUtils {
 			break;
 		case "classname":
 			ele = driver.findElement(By.className(locatorValue));
-			
 			break;
 		case "tagname":
 			ele = driver.findElement(By.tagName(locatorValue));
-			
 			break;
 		case "linktext":
 			ele = driver.findElement(By.linkText(locatorValue));
-			
 			break;
 		case "ptext":
 			ele = driver.findElement(By.partialLinkText(locatorValue));

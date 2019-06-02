@@ -1,0 +1,5 @@
+WinWaitActive("Open")
+Sleep(1000)
+ControlSetText("Open","","Edit1","D:\Readme.txt")
+Sleep(1000)
+ControlClick("Open","&Open","Button1")
