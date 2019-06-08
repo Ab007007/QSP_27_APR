@@ -47,7 +47,7 @@ public class ActitimeUtils extends DriverUtils {
 		driver.findElement(By.id("loginButton")).click();
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
