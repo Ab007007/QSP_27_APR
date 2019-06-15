@@ -52,8 +52,21 @@ public class ActitimeUtils extends DriverUtils {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		validateTitle("actiTIME - Enter Time-Track");
 	}
 
+	public static void validateTitle(String expectedTitle)
+	{
+		String actualTitle = driver.getTitle();
+		if(actualTitle.equals(expectedTitle))
+		{
+			System.out.println("Title matched ");
+		}
+		else
+		{
+			System.out.println("[FAIL] - Title didnt matched");
+		}
+	}
 	public static void clickOnModule(String moduleName) {
 		switch (moduleName.toUpperCase()) {
 		case "TASKS":

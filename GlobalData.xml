@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Default suite">
+	<parameter name="url" value="http://localhost/login" />
+	<parameter name="username" value="admin" />
+	<parameter name="password" value="manager" />
+
+	<test thread-count="5" verbose="2" name="Module1 test">
+		<groups>
+			<run>
+				<include name="checkinTests" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.qsp.basics.testng.Cars" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
