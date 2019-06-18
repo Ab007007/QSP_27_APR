@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import junit.framework.Assert;
+
 public class ActitimeUtils extends DriverUtils {
 
 	public static void logout()
@@ -58,14 +60,7 @@ public class ActitimeUtils extends DriverUtils {
 	public static void validateTitle(String expectedTitle)
 	{
 		String actualTitle = driver.getTitle();
-		if(actualTitle.equals(expectedTitle))
-		{
-			System.out.println("Title matched ");
-		}
-		else
-		{
-			System.out.println("[FAIL] - Title didnt matched");
-		}
+		Assert.assertEquals(expectedTitle, actualTitle);
 	}
 	public static void clickOnModule(String moduleName) {
 		switch (moduleName.toUpperCase()) {

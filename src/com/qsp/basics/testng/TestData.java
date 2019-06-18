@@ -8,10 +8,10 @@ public class TestData
 	 @DataProvider
 	  public Object[][] customerdata() {
 	    return new Object[][] {
-	    	new Object[] { "testng-Customer1","testng-Desc-Customer1"},
-	    	new Object[] { "testng-Customer2","testng-Desc-Customer1"},
-	    	new Object[] { "testng-Customer3","testng-Desc-Customer1"},
-	    	new Object[] { "testng-Customer4","testng-Desc-Customer1"},
+	    	new Object[] { "testng-Customer11","testng-Desc-Customer1"},
+	    	new Object[] { "testng-Customer22","testng-Desc-Customer1"},
+	    	new Object[] { "testng-Customer33","testng-Desc-Customer1"},
+	    	new Object[] { "testng-Customer44","testng-Desc-Customer1"},
 	    };
 	  }
 	 

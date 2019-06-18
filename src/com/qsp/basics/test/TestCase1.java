@@ -32,6 +32,7 @@ public class TestCase1 {
 	@Test
 	public void loginTest() throws InterruptedException, MalformedURLException {
 
+		//"http://192.168.1.100:5555"
 		String nodeIP = "http://192.168.1.149:5555";
 		ChromeOptions options = new ChromeOptions();
 		// FirefoxOptions options = new FirefoxOptions();
